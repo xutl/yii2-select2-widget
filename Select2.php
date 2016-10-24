@@ -48,7 +48,7 @@ class Select2 extends InputWidget
         if ($this->hasModel()) {
             echo Html::activeTextInput($this->model, $this->attribute, $this->options);
         } else {
-            echo Html::textArea($this->name, $this->value, $this->options);
+            echo Html::textInput($this->name, $this->value, $this->options);
         }
         $view = $this->getView();
         Select2Asset::register($view);
