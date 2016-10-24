@@ -11,14 +11,14 @@ use yii\web\AssetBundle;
 
 /**
  * Class Select2Asset
- * @package xutl\ueditor
+ * @package xutl\select2
  */
 class Select2Asset extends AssetBundle
 {
     public $sourcePath = '@vendor/xutl/yii2-select2-widget/assets';
 
     public $js = [
-        'select2.min.js',
+        'js/select2.min.js',
     ];
 
     public $css = [
