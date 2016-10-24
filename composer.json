@@ -1,10 +1,10 @@
 {
-  "name": "xutl/yii2-ueditor-widget",
-  "description": "The ueditor extension for the Yii framework",
+  "name": "xutl/yii2-select2-widget",
+  "description": "The select2 extension for the Yii framework",
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
   "keywords": [
-    "ueditor",
+    "select2",
     "yii2"
   ],
   "authors": [
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "xutl\\ueditor\\": ""
+      "xutl\\select2\\": ""
     }
   }
 }
