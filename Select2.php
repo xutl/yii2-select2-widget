@@ -20,6 +20,8 @@ class Select2 extends InputWidget
 
     public $language;
 
+    public $items;
+
     public $clientOptions = [];
 
     /**
@@ -35,6 +37,7 @@ class Select2 extends InputWidget
 
         $this->clientOptions = array_merge([
             'theme' => 'bootstrap',
+            'width' => '100%',
         ], $this->clientOptions);
     }
 
@@ -46,9 +49,9 @@ class Select2 extends InputWidget
         $language = $this->language ? $this->language : Yii::$app->language;
 
         if ($this->hasModel()) {
-            echo Html::activeTextInput($this->model, $this->attribute, $this->options);
+            echo Html::activeDropDownList($this->model, $this->attribute, $this->items, $this->options);
         } else {
-            echo Html::textInput($this->name, $this->value, $this->options);
+            echo Html::dropDownList($this->name, $this->value, $this->items, $this->options);
         }
         $view = $this->getView();
         Select2Asset::register($view);
