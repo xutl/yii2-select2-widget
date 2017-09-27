@@ -4,6 +4,7 @@
  * @copyright Copyright (c) 2012 TintSoft Technology Co. Ltd.
  * @license http://www.tintsoft.com/license/
  */
+
 namespace xutl\select2;
 
 use Yii;
@@ -23,7 +24,7 @@ class Select2Asset extends AssetBundle
 
     public $css = [
         'css/select2.min.css',
-		'css/select2-bootstrap.min.css',
+        'css/select2-bootstrap.min.css',
     ];
 
     public $depends = [
